@@ -1,0 +1,48 @@
+服务器IP:  23.105.202.174 
+端口:  29900 
+加速地址: 127.0.0.1:7788
+
+当前安装的 Kcptun 版本为: 20170112
+请前往 https://github.com/xtaci/kcptun/releases/tag/v20170112 手动下载客户端文件
+
+可使用的客户端配置文件为:
+{
+    "localaddr": ":7788",
+    "remoteaddr": "23.105.202.174:29900",
+    "key": "it's a secrect",
+    "crypt": "aes",
+    "mode": "fast",
+    "conn": 1,
+    "autoexpire": 60,
+    "mtu": 1350,
+    "sndwnd": 1024,
+    "rcvwnd": 1024,
+    "datashard": 10,
+    "parityshard": 3,
+    "dscp": 0,
+    "nocomp": false,
+    "acknodelay": false,
+    "nodelay": 0,
+    "interval": 20,
+    "resend": 2,
+    "nc": 1,
+    "sockbuf": 4194304,
+    "keepalive": 10
+}
+
+手机端参数可以使用:
+-autoexpire 60
+
+各参数详细说明可以查看: https://github.com/xtaci/kcptun
+
+Kcptun 安装目录: /usr/share/kcptun
+Kcptun 日志目录: /var/log/kcptun
+
+已将 Supervisor 加入开机自启, Kcptun 服务端会随 Supervisor 的启动而启动
+
+更多使用说明: ./kcptun.sh help
+
+欢迎访问扩软博客: https://blog.kuoruan.com/
+我们的QQ群: 43391448
+
+尽情使用吧!
